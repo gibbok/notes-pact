@@ -31,5 +31,5 @@ Pros:
 ## How it works
 
 - Consumer tetss behaviour against mock (write test that check our consumer behaviour against a mock), we could use wiremock or MSW in this part
-- From the mock used to test the consumer (MSW mocks), we use it to generate to contract (pact file)
+- From the mock used to test the consumer (MSW mocks), we use it to generate to contract (pact file, aka the consumer contract)
 - Test consumer and provider indipendently
