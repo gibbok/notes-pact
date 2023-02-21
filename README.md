@@ -27,3 +27,9 @@ Pros:
 - Low barrier to entry
 - Scale faster, reuse existing tets
 - Upacale re-using current processed and tolling
+
+## How it works
+
+- Consumer tetss behaviour against mock (write test that check our consumer behaviour against a mock), we could use wiremock or MSW in this part
+- From the mock used to test the consumer (MSW mocks), we use it to generate to contract (pact file)
+- Test consumer and provider indipendently
