@@ -1,5 +1,14 @@
 # Notes on PACT contract testing
 
+## Pact
+
+- Pact is an contract testing tool that further improves the contract testing workflow by allowing users to implement consumer-driven contracts.
+
+During the consumer tests, each request made to a Pact mock provider is recorded into the contract file, along with its expected response.
+[In FE we have already the mock in place, we do not want to duplicate with Pact]
+
+https://pactflow.io/how-pact-works/#slide-1
+
 ## Bi-Directional Contract Testing (BDCT)
 
 Bi-Directional Contract Testing is a type of static contract testing where two contracts - one representing the consumer expectations, and another representing the provider capability - are compared to ensure they are compatible.
