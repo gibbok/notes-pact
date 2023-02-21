@@ -22,3 +22,7 @@ Packflow provide continuose api compliance by comparisni the consumer contract w
 It allow to generate contract from existing mocks (such as wiremock). 
 Developer can use their plug and play adapter.
 This is good because you can leverage existing tools.
+
+Pros:
+- Low barrier to entry
+- Scale faster, reuse existing tets
