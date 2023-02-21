@@ -67,4 +67,6 @@ Notes:
 
 With BDCT, the key difference is that a Provider uploads its own provider contract advertising its full capability which is statically compared to the expectations in the consumer contract - the consumer contract is never replayed against the provider code base. This creates a much simpler and decoupled workflow. See the trade-offs for more.
 
-
+Remember:
+- Contract tests focus on the messages that flow between a consumer and provider (schema)
+- Functional tests also ensure that the correct side effects have occurred (for instance a new entry is created in db)
