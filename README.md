@@ -23,7 +23,7 @@ BDCT is a feature exclusive to PactFlow and is not available in the Pact OSS pro
 
 - Contract first provider driven workflows
 - Using OpenAPI
-- Integration with MSQ, Cypress, Wiremock
+- Integration with MSQ, Cypress, Wiremock BYO (Bring Your Own mocks)
 - Support contract verification Postman, Dredd
 - For white/black box
 - Wide audience contract tester dev, qas, SDET (Software Development Engineer in Test)
