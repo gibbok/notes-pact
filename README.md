@@ -70,3 +70,8 @@ With BDCT, the key difference is that a Provider uploads its own provider contra
 Remember:
 - Contract tests focus on the messages that flow between a consumer and provider (schema)
 - Functional tests also ensure that the correct side effects have occurred (for instance a new entry is created in db)
+
+
+A consumer contract is a collection of interactions which describe how the Consumer expects the Provider to behave. Each Consumer will have its own unique consumer contract for each of its Providers.
+
+A provider contract specifies the capability of the Provider. In this workshop, it will take the form of an OpenAPI document, but may be other formats such as a GraphQL schema, a SOAP XSD, a protobuf definition and so on.
