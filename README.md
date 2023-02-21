@@ -20,3 +20,5 @@ Bi-Directional Contract Testing instead using a schema comparison approch.
 
 Packflow provide continuose api compliance by comparisni the consumer contract with the provider contract such an API contract.
 It allow to generate contract from existing mocks (such as wiremock). 
+Developer can use their plug and play adapter.
+This is good because you can leverage existing tools.
