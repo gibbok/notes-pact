@@ -4,8 +4,13 @@
 
 - Pact is an contract testing tool that further improves the contract testing workflow by allowing users to implement consumer-driven contracts.
 
-During the consumer tests, each request made to a Pact mock provider is recorded into the contract file, along with its expected response.
+### How it works
+
+- During the consumer tests, each request made to a Pact mock provider is recorded into the contract file, along with its expected response.
 [In FE we have already the mock in place, we do not want to duplicate with Pact]
+- A Pact simulated consumer then replays each request against the real provider, and compares the actual and expected responses. 
+- If they match, we have verified that the simulated applications behave the same way as the real applications. 
+- Whne contract testing is in place we use Pact Broker to, share contract accorss teams, manage contracts acroos branches, orchestrate builds.
 
 https://pactflow.io/how-pact-works/#slide-1
 
