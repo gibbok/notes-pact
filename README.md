@@ -61,3 +61,10 @@ After a contract comparison is made, to make sure there consumer is a valid subs
 - The provider contract is tested against the provider using a funcional API testin tool such RestAssured, Dredd or Postman
 - Provider contrat i uploaded to Pactflow
 - We check the compatibility with the consumer
+
+
+Notes:
+
+With BDCT, the key difference is that a Provider uploads its own provider contract advertising its full capability which is statically compared to the expectations in the consumer contract - the consumer contract is never replayed against the provider code base. This creates a much simpler and decoupled workflow. See the trade-offs for more.
+
+
