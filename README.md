@@ -3,7 +3,8 @@
 
 ## Bi-Directional Contract Testing (BDCT)
 
-It is a new form of contract testing based on schema testing.
+Bi-Directional Contract Testing is a type of static contract testing where two contracts - one representing the consumer expectations, and another representing the provider capability - are compared to ensure they are compatible.
+The compairons is based on their schema.
 
 - Contract first provider drivern workflows
 - Using OpenAPI
