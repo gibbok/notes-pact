@@ -26,3 +26,4 @@ This is good because you can leverage existing tools.
 Pros:
 - Low barrier to entry
 - Scale faster, reuse existing tets
+- Upacale re-using current processed and tolling
