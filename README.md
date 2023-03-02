@@ -1,9 +1,17 @@
 # Notes on PACT contract testing
 
+
+Integrations tests are about functionality while contract tests are about the interface.
+
+> These tests are not component tests. They do not test the behaviour of the service deeply but that the inputs and outputs of service calls contain required attributes and that response latency and throughput are within acceptable limits.
+
+
+
 ## Pact
 
 - Pact is an contract testing tool that further improves the contract testing workflow by allowing users to implement consumer-driven contracts.
-- Contract testing is an alternative approach to traditional integration
+- Contract testing is an alternative approach to traditional integration testing
+
 
 Pact on its own allows you to create and verify contracts. Pact + Pact Broker allows you to integrate contract testing into your CI/CD pipeline to allow you to release code faster
 
@@ -144,3 +152,5 @@ Step 3. Back to the Consumer CI build
 Pact Broker can be used via Docker https://hub.docker.com/r/pactfoundation/pact-broker
 
 https://docs.pact.io/pact_broker
+
+https://martinfowler.com/articles/microservice-testing
