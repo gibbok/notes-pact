@@ -6,9 +6,7 @@ Integrations tests are about functionality while contract tests are about the in
 > These tests are not component tests. They do not test the behaviour of the service deeply but that the inputs and outputs of service calls contain required attributes and that response latency and throughput are within acceptable limits.
 > Ideally, the contract test suites written by each consuming team are packaged and runnable in the build pipelines for the producing services. In this way, the maintainers of the producing service know the impact of their changes on their consumers.
 
-
-![Screenshot 2023-03-02 at 9 28 26 AM](https://user-images.githubusercontent.com/17195702/222373521-17dde42c-c00b-457f-9acf-bf87ae5c3567.png)
-
+![Screenshot 2023-03-02 at 9 30 17 AM](https://user-images.githubusercontent.com/17195702/222373759-754e38a3-bddd-4480-ac39-56aa5991ad89.png)
 
 ## Pact
 
