@@ -17,7 +17,7 @@ Pact on its own allows you to create and verify contracts. Pact + Pact Broker al
 ### How it works
 
 - During the consumer tests, each request made to a Pact mock provider is recorded into the contract file (the Pact file), along with its expected response. The Pact mock provider can be a substituted with an adapter, for instance if WireMocks or MSW.
-- A Pact simulated consumer then replays each request against the real provider, and compares the actual and expected responses. 
+- A Pact simulated consumer then replays each request against the *real provider*, and compares the actual and expected responses. 
 - If they match, we have verified that the simulated applications behave the same way as the real applications. 
 - When contract testing is in place we use Pact Broker to: share contract across teams, manage contracts across branches, orchestrate builds.
 
