@@ -7,6 +7,9 @@ Integrations tests are about functionality while contract tests are about the in
 > Ideally, the contract test suites written by each consuming team are packaged and runnable in the build pipelines for the producing services. In this way, the maintainers of the producing service know the impact of their changes on their consumers.
 
 
+![Screenshot 2023-03-02 at 9 28 26 AM](https://user-images.githubusercontent.com/17195702/222373521-17dde42c-c00b-457f-9acf-bf87ae5c3567.png)
+
+
 ## Pact
 
 - Pact is an contract testing tool that further improves the contract testing workflow by allowing users to implement consumer-driven contracts.
