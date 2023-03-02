@@ -154,3 +154,4 @@ With BDCT, the key difference is that a Provider uploads its own provider contra
 
 https://pactflow.io/difference-between-consumer-driven-contract-testing-and-bi-directional-contract-testing/
 
+https://pactflow.io/how-pact-works/#slide-1
