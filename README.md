@@ -1,6 +1,5 @@
 # Notes on PACT contract testing
 
-
 Integrations tests are about functionality while contract tests are about the interface.
 
 > These tests are not component tests. They do not test the behaviour of the service deeply but that the inputs and outputs of service calls contain required attributes and that response latency and throughput are within acceptable limits.
