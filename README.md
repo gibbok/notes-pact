@@ -141,4 +141,6 @@ Step 3. Back to the Consumer CI build
 - If the pact has been verified successfully, the deployment can proceed.
 - When the consumer is deployed they record the deployment with Pact 
 
+Pact Broker can be used via Docker https://hub.docker.com/r/pactfoundation/pact-broker
+
 https://docs.pact.io/pact_broker
