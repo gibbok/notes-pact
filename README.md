@@ -119,3 +119,26 @@ Main feature:
 - Vew diffs between Pact versions
 - CLI encorporating Pact workflow
 
+How it is working:
+
+Step 1
+- The consumer project runs its tests using the Pact library to provide a mock service (or use an adapter like for WireMock or MSW)
+- While the tests run, the mock service writes the requests and the expected responses to a JSON "pact" file - this is the consumer contract.
+- The generated pact is then published to the Pact Broker, The easiest way to do this is to publish the pact file using the Pact Broker Client CLI
+- When a pact is published, a webhook in the Pact Broker kicks off a build of the provider project if the pact content has changed since the previous version and requires verification.
+
+Step 2
+- The provider has a verification task that is configured to retrieve the relevant pacts between itself and its consumer.
+- The provider build runs the pact verification task, which retrieves the pact(s) from the Pact Broker, replays each request against the provider, and checks that the responses match the expected responses.
+- If the pact verification fails, the build fails. 
+- The results of the verification are published back to the Pact Broker  by the pact verification tool, so the consumer team will know if the code they have written will work in real life.
+- The Provider CI determines if the provider is compatible with its consumers in a particular environment
+- If the pact has been verified successfully, the deployment can proceed.
+- When the provider is deployed they record the deployment with Pact 
+
+Step 3. Back to the Consumer CI build
+- The Consumer CI determines if the pact has been verified by ru
+- If the pact has been verified successfully, the deployment can proceed.
+- When the consumer is deployed they record the deployment with Pact 
+
+https://docs.pact.io/pact_broker
