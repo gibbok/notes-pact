@@ -166,5 +166,8 @@ https://www.youtube.com/watch?v=VmluCw6a6IE
 
 https://www.youtube.com/watch?v=V-OV6lRwhYA
 
+# Useful articles
+
+https://betterprogramming.pub/your-contract-tests-are-not-protecting-you-563a5d6cdfef
 
 ![Screenshot 2023-03-30 at 12 38 24 PM](https://user-images.githubusercontent.com/17195702/228811261-d324811e-57d8-4078-8302-72d6d040fae8.png)
