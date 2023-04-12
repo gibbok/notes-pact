@@ -14,6 +14,8 @@ Integrations tests are about functionality while contract tests are about the in
 
 Pact on its own allows you to create and verify contracts. Pact + Pact Broker allows you to integrate contract testing into your CI/CD pipeline to allow you to release code faster.
 
+> Contract testing is a technique for testing an integration point by checking each application in isolation to ensure the messages it sends or receives conform to a shared understanding that is documented in a “contract”. 
+
 ### How it works
 
 - During the consumer tests, each request made to a Pact mock provider is recorded into the contract file (the Pact file), along with its expected response. The Pact mock provider can be a substituted with an adapter, for instance if WireMocks or MSW.
@@ -22,6 +24,8 @@ Pact on its own allows you to create and verify contracts. Pact + Pact Broker al
 - When contract testing is in place we use Pact Broker to: share contract across teams, manage contracts across branches, orchestrate builds.
 
 https://pactflow.io/how-pact-works/#slide-1
+
+> Pact is consumer-driven, which means it’s the consumer who defines the contract. In the test, you define the pact, preferably using a library which then sets up a mock server based on the pact. You can then use your consumer code against the mock server and verify that it works as expected. This does not verify that the request the client makes will work against the producer or that the mocked response is anything like what the producer will return as it’s all mocked by you.
 
 ## Pact Broker
 
