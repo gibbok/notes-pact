@@ -85,6 +85,11 @@ https://docs.pact.io/pact_broker
 
 https://martinfowler.com/articles/microservice-testing
 
+### can_i_deploy
+
+It is a command-line tool that checks if it’s safe for you to release your application. If you’re deploying something that will break a contract, or the contract has not been verified, it will fail. Without using this, you may deploy something which is broken.
+
+can_i_deploy should be used in your pipeline, before you deploy to each environment and tag pacts with the environment after it is finished so we can avoid having a PR merged which can brack our contracts.
 
 ## Bi-Directional Contract Testing (BDCT)
 
