@@ -25,7 +25,7 @@ Pact on its own allows you to create and verify contracts. Pact + Pact Broker al
 
 https://pactflow.io/how-pact-works/#slide-1
 
-> Pact is consumer-driven, which means it’s the consumer who defines the contract. In the test, you define the pact, preferably using a library which then sets up a mock server based on the pact. You can then use your consumer code against the mock server and verify that it works as expected. This does not verify that the request the client makes will work against the producer or that the mocked response is anything like what the producer will return as it’s all mocked by you.
+> Pact is consumer-driven, which means it’s the consumer who defines the contract. In the test, you define the pact, preferably using a library which then sets up a mock server based on the pact. You can then use your consumer code against the mock server and verify that it works as expected. This does not verify that the request the client makes will work against the producer or that the mocked response is anything like what the producer will return as it’s all mocked by you. Producer tests actually verify the contract. Pact may be consumer-driven but only the producer (provider) can actually verify if requests and responses match. The pact files created by the consumer tests are run against your application. Your application is booted up, preferably using mocked data, and the requests defined in the pacts are fired at it. The responses are then verified against the expected responses in the pact. If they match the tests pass.
 
 ## Pact Broker
 
@@ -33,6 +33,9 @@ https://pactflow.io/how-pact-works/#slide-1
 - It is open source, there is a plug-and-play version payed called PactFlow.
 - Pact Broker can be used via Docker https://hub.docker.com/r/pactfoundation/pact-broker
 - Contract testing gives you tests that are quicker to execute. One down side of the approach is that the important information that would be available all in one place at the end of an integration test suite execution. The Pact Broker is a tool that brings all this information back together again.
+- Pacts are uploaded by the consumers to the broker, allowing producers to download the pacts and verify them. When producers have verified a pact they upload the status (pass or fail) back to the broker for future use.
+- Pacts have a version which changes when the pact changes. Multiple application versions may have the same version of their pact if it does not change.
+- Webhooks are a feature of the pact broker which makes HTTP requests to configurable endpoints for pact lifecycle changes, for instance if a pact has been changed; When this happens a webhook can trigger a pipeline that will run the relevant producer tests to verify the changed pact.
 
 Pact Broker is useful for:
 
